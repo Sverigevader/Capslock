@@ -272,23 +272,23 @@ CapsLock & b:: Send, ^{Left}                                         ;|
 ;---------------------------------------------------------------------o
 
 
-;=====================================================================o
-;                       CapsLock Media Controller                    ;|
-;-----------------------------------o---------------------------------o
-;                    CapsLock + F1  |  Volume_Mute                   ;|
-;                    CapsLock + F2  |  Volume_Down                   ;|
-;                    CapsLock + F3  |  Volume_Up                     ;|
-;                    CapsLock + F3  |  Media_Play_Pause              ;|
-;                    CapsLock + F5  |  Media_Next                    ;|
-;                    CapsLock + F6  |  Media_Stop                    ;|
-;-----------------------------------o---------------------------------o
-CapsLock & F1:: Send, {Volume_Mute}                                  ;|
-CapsLock & F2:: Send, {Volume_Down}                                  ;|
-CapsLock & F3:: Send, {Volume_Up}                                    ;|
-CapsLock & F4:: Send, {Media_Play_Pause}                             ;|
-CapsLock & F5:: Send, {Media_Next}                                   ;|
-CapsLock & F6:: Send, {Media_Stop}                                   ;|
-;---------------------------------------------------------------------o
+; ;=====================================================================o
+; ;                       CapsLock Media Controller                    ;|
+; ;-----------------------------------o---------------------------------o
+; ;                    CapsLock + F1  |  Volume_Mute                   ;|
+; ;                    CapsLock + F2  |  Volume_Down                   ;|
+; ;                    CapsLock + F3  |  Volume_Up                     ;|
+; ;                    CapsLock + F3  |  Media_Play_Pause              ;|
+; ;                    CapsLock + F5  |  Media_Next                    ;|
+; ;                    CapsLock + F6  |  Media_Stop                    ;|
+; ;-----------------------------------o---------------------------------o
+; CapsLock & F1:: Send, {Volume_Mute}                                  ;|
+; CapsLock & F2:: Send, {Volume_Down}                                  ;|
+; CapsLock & F3:: Send, {Volume_Up}                                    ;|
+; CapsLock & F4:: Send, {Media_Play_Pause}                             ;|
+; CapsLock & F5:: Send, {Media_Next}                                   ;|
+; CapsLock & F6:: Send, {Media_Stop}                                   ;|
+; ;---------------------------------------------------------------------o
 
 
 ;=====================================================================o
@@ -328,7 +328,6 @@ CapsLock & g:: Send, {AppsKey}                                       ;|
 ;-----------------------------------o---------------------------------o
 CapsLock & d:: Send, !d                                              ;|
 CapsLock & f:: Send, !f                                              ;|
-;CapsLock & e:: Run http://cn.bing.com/                              ;|
 CapsLock & r:: Run Powershell                                        ;|
 ;CapsLock & t:: Run C:\Program Files (x86)\Notepad++\notepad++.exe   ;|
 ;---------------------------------------------------------------------o
