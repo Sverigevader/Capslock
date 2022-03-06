@@ -235,28 +235,6 @@ return                                                               ;|
 
 
 ;=====================================================================o
-;                     CapsLock Mouse Controller                      ;|
-;-----------------------------------o---------------------------------o
-;                   CapsLock + Up   |  Mouse Up                      ;|
-;                   CapsLock + Down |  Mouse Down                    ;|
-;                   CapsLock + Left |  Mouse Left                    ;|
-;                  CapsLock + Right |  Mouse Right                   ;|
-;    CapsLock + Enter(Push Release) |  Mouse Left Push(Release)      ;|
-;-----------------------------------o---------------------------------o
-CapsLock & Up::    MouseMove, 0, -10, 0, R                           ;|
-CapsLock & Down::  MouseMove, 0, 10, 0, R                            ;|
-CapsLock & Left::  MouseMove, -10, 0, 0, R                           ;|
-CapsLock & Right:: MouseMove, 10, 0, 0, R                            ;|
-;-----------------------------------o                                ;|
-CapsLock & Enter::                                                   ;|
-SendEvent {Blind}{LButton down}                                      ;|
-KeyWait Enter                                                        ;|
-SendEvent {Blind}{LButton up}                                        ;|
-return                                                               ;|
-;---------------------------------------------------------------------o
-
-
-;=====================================================================o
 ;                           CapsLock Deletor                         ;|
 ;-----------------------------------o---------------------------------o
 ;                     CapsLock + n  |  Ctrl + Delete (Delete a Word) ;|
@@ -350,9 +328,9 @@ CapsLock & g:: Send, {AppsKey}                                       ;|
 ;-----------------------------------o---------------------------------o
 CapsLock & d:: Send, !d                                              ;|
 CapsLock & f:: Send, !f                                              ;|
-CapsLock & e:: Run http://cn.bing.com/                               ;|
+;CapsLock & e:: Run http://cn.bing.com/                              ;|
 CapsLock & r:: Run Powershell                                        ;|
-CapsLock & t:: Run C:\Program Files (x86)\Notepad++\notepad++.exe    ;|
+;CapsLock & t:: Run C:\Program Files (x86)\Notepad++\notepad++.exe   ;|
 ;---------------------------------------------------------------------o
 
 
