@@ -258,8 +258,8 @@ CapsLock & n:: Send, ^{BS}                                           ;|
 ;                     CapsLock + v  |  Ctrl + z (Paste)              ;|
 ;                     CapsLock + a  |  Ctrl + a (Select All)         ;|
 ;                     CapsLock + y  |  Ctrl + z (Yeild)              ;|
-;                     CapsLock + w  |  Ctrl + Right(Move as [vim: w]);|
-;                     CapsLock + b  |  Ctrl + Left (Move as [vim: b]);|
+;                     CapsLock + e  |  Ctrl + Right(Move as [vim: w]);|
+;                     CapsLock + q  |  Ctrl + Left (Move as [vim: b]);|
 ;-----------------------------------o---------------------------------o
 CapsLock & z:: Send, ^z                                              ;|
 CapsLock & x:: Send, ^x                                              ;|
@@ -267,8 +267,8 @@ CapsLock & c:: Send, ^c                                              ;|
 CapsLock & v:: Send, ^v                                              ;|
 CapsLock & a:: Send, ^a                                              ;|
 CapsLock & y:: Send, ^y                                              ;|
-CapsLock & w:: Send, ^{Right}                                        ;|
-CapsLock & b:: Send, ^{Left}                                         ;|
+CapsLock & e:: Send, ^{Right}                                        ;|
+CapsLock & q:: Send, ^{Left}                                         ;|
 ;---------------------------------------------------------------------o
 
 
@@ -311,7 +311,7 @@ else
 }
 return                                       
 ;-----------------------------------o                                ;|
-CapsLock & q::                                                       ;|
+CapsLock & w::                                                       ;|
 if GetKeyState("alt") = 0                                            ;|
 {                                                                    ;|
     Send, ^w                                                         ;|
@@ -321,6 +321,8 @@ else {                                                               ;|
     return                                                           ;|
 }                                                                    ;|
 return                                                               ;|
+;-----------------------------------o                                ;|
+CapsLock & T:: Send, ^t                                              ;|
 ;-----------------------------------o                                ;|
 CapsLock & g:: Send, {AppsKey}                                       ;|
 ;---------------------------------------------------------------------o
@@ -352,7 +354,7 @@ CapsLock & r:: Run Powershell                                        ;|
 ;                     CapsLock + /  |  Comment      (Visual Studio)  ;|
 ;                     CapsLock + \  |  Uncomment    (Visual Studio)  ;|
 ;                     CapsLock + 1  |  Build and Run(Visual Studio)  ;|
-;                     CapsLock + 2  |  Debuging     (Visual Studio)  ;|
+;                     CapsLock + 2  |  Debugging    (Visual Studio)  ;|
 ;                     CapsLock + 3  |  Step Over    (Visual Studio)  ;|
 ;                     CapsLock + 4  |  Step In      (Visual Studio)  ;|
 ;                     CapsLock + 5  |  Stop Debuging(Visual Studio)  ;|
@@ -362,10 +364,10 @@ CapsLock & r:: Run Powershell                                        ;|
 ;                     CapsLock + 9  |  Shift + 9     (               ;|
 ;                     CapsLock + 0  |  Shift + 0     )               ;|
 ;-----------------------------------o---------------------------------o
-CapsLock & `;:: Send, {Enter}                                        ;|
+; CapsLock & `;:: Send, {Enter}                                      ;|
 CapsLock & ':: Send, =                                               ;|
-CapsLock & [:: Send, ^-                                              ;|
-CapsLock & ]:: Send, {F12}                                           ;|
+; CapsLock & [:: Send, ^-                                            ;|
+; CapsLock & ]:: Send, {F12}                                         ;|
 ;-----------------------------------o                                ;|
 CapsLock & /::                                                       ;|
 Send, ^e                                                             ;|
