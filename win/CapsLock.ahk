@@ -339,7 +339,7 @@ CapsLock & g:: Send, {AppsKey}                                       ;|
 ;-----------------------------------o---------------------------------o
 CapsLock & d:: Send, !d                                              ;|
 CapsLock & f:: Send, !f                                              ;|
-CapsLock & r:: Run Powershell                                        ;|
+CapsLock & r:: Run wt                                        ;|
 ;CapsLock & t:: Run C:\Program Files (x86)\Notepad++\notepad++.exe   ;|
 ;---------------------------------------------------------------------o
 
