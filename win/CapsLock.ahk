@@ -1,5 +1,5 @@
 ;=====================================================================o
-;                   Feng Ruohang's AHK Script                         | 
+;                   Feng Ruohang's AHK Script                         |
 ;                      CapsLock Enhancement                           |
 ;---------------------------------------------------------------------o
 ;Description:                                                         |
@@ -272,23 +272,23 @@ CapsLock & q:: Send, ^{Left}                                         ;|
 ;---------------------------------------------------------------------o
 
 
-; ;=====================================================================o
-; ;                       CapsLock Media Controller                    ;|
-; ;-----------------------------------o---------------------------------o
-; ;                    CapsLock + F1  |  Volume_Mute                   ;|
-; ;                    CapsLock + F2  |  Volume_Down                   ;|
-; ;                    CapsLock + F3  |  Volume_Up                     ;|
-; ;                    CapsLock + F3  |  Media_Play_Pause              ;|
-; ;                    CapsLock + F5  |  Media_Next                    ;|
-; ;                    CapsLock + F6  |  Media_Stop                    ;|
-; ;-----------------------------------o---------------------------------o
-; CapsLock & F1:: Send, {Volume_Mute}                                  ;|
-; CapsLock & F2:: Send, {Volume_Down}                                  ;|
-; CapsLock & F3:: Send, {Volume_Up}                                    ;|
-; CapsLock & F4:: Send, {Media_Play_Pause}                             ;|
-; CapsLock & F5:: Send, {Media_Next}                                   ;|
-; CapsLock & F6:: Send, {Media_Stop}                                   ;|
-; ;---------------------------------------------------------------------o
+; ;===================================================================o
+; ;                       CapsLock Media Controller                  ;|
+; ;-----------------------------------o-------------------------------o
+; ;                    CapsLock + F1  |  Volume_Mute                 ;|
+; ;                    CapsLock + F2  |  Volume_Down                 ;|
+; ;                    CapsLock + F3  |  Volume_Up                   ;|
+; ;                    CapsLock + F3  |  Media_Play_Pause            ;|
+; ;                    CapsLock + F5  |  Media_Next                  ;|
+; ;                    CapsLock + F6  |  Media_Stop                  ;|
+; ;-----------------------------------o-------------------------------o
+; CapsLock & F1:: Send, {Volume_Mute}                                ;|
+; CapsLock & F2:: Send, {Volume_Down}                                ;|
+; CapsLock & F3:: Send, {Volume_Up}                                  ;|
+; CapsLock & F4:: Send, {Media_Play_Pause}                           ;|
+; CapsLock & F5:: Send, {Media_Next}                                 ;|
+; CapsLock & F6:: Send, {Media_Stop}                                 ;|
+; ;-------------------------------------------------------------------o
 
 
 ;=====================================================================o
@@ -300,16 +300,16 @@ CapsLock & q:: Send, ^{Left}                                         ;|
 ;               Alt + CapsLock + q  |  Ctrl + Tab (Close Windows)    ;|
 ;                     CapsLock + g  |  AppsKey    (Menu Key)         ;|
 ;-----------------------------------o---------------------------------o
-CapsLock & s::                                                      
-if GetKeyState("shift") = 0
-{
-    Send, ^{Tab}
-}
-else
-{
-    Send, +^{Tab}
-}
-return                                       
+CapsLock & s::                                                       ;|
+if GetKeyState("shift") = 0                                          ;|
+{                                                                    ;|
+    Send, ^{Tab}                                                     ;|
+}                                                                    ;|
+else                                                                 ;|
+{                                                                    ;|
+    Send, +^{Tab}                                                    ;|
+}                                                                    
+return                                                               ;|
 ;-----------------------------------o                                ;|
 CapsLock & w::                                                       ;|
 if GetKeyState("alt") = 0                                            ;|
@@ -358,11 +358,6 @@ CapsLock & r:: Run wt                                        ;|
 ;                     CapsLock + 3  |  Step Over    (Visual Studio)  ;|
 ;                     CapsLock + 4  |  Step In      (Visual Studio)  ;|
 ;                     CapsLock + 5  |  Stop Debuging(Visual Studio)  ;|
-;                     CapsLock + 6  |  Shift + 6     ^               ;|
-;                     CapsLock + 7  |  Shift + 7     &               ;|
-;                     CapsLock + 8  |  Shift + 8     *               ;|
-;                     CapsLock + 9  |  Shift + 9     (               ;|
-;                     CapsLock + 0  |  Shift + 0     )               ;|
 ;-----------------------------------o---------------------------------o
 ; CapsLock & `;:: Send, {Enter}                                      ;|
 CapsLock & ':: Send, =                                               ;|
@@ -385,9 +380,9 @@ CapsLock & 3:: Send,{F10}                                            ;|
 CapsLock & 4:: Send,{F11}                                            ;|
 CapsLock & 5:: Send,+{F5}                                            ;|
 ;-----------------------------------o                                ;|
-CapsLock & 6:: Send,+6                                               ;|
-CapsLock & 7:: Send,+7                                               ;|
-CapsLock & 8:: Send,+8                                               ;|
-CapsLock & 9:: Send,+9                                               ;|
-CapsLock & 0:: Send,+0                                               ;|
+CapsLock & 6:: Send,+6 ;låt vara som & tecken                        ;|
+CapsLock & 7:: Send,{{}                                              ;|
+CapsLock & 8:: Send,{[}                                              ;|
+CapsLock & 9:: Send,{]}                                              ;|
+CapsLock & 0:: Send,{}}                                              ;|
 ;---------------------------------------------------------------------o
