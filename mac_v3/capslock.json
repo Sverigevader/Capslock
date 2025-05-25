@@ -4609,6 +4609,29 @@
           ]
         },
         {
+          "description": "t = new tab",
+          "type": "basic",
+          "from": {
+            "key_code": "t",
+            "modifiers": {
+              "mandatory": [
+                "right_command",
+                "right_control",
+                "right_shift",
+                "right_option"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "t",
+              "modifiers": [
+                "left_command"
+              ]
+            }
+          ]
+        },
+        {
           "description": "control + a = launchpad",
           "type": "basic",
           "from": {

@@ -1198,6 +1198,13 @@ rules:
         from: { key_code: w, modifiers: { mandatory: [ right_command,right_control,right_shift,right_option ] } }
         to: [ { key_code: w , modifiers: [ left_command ] } ]
 
+      #==========================================================#
+      # ( t ) --> new tab                                        #
+      #==========================================================#
+      - description: 't = new tab'
+        type: basic
+        from: { key_code: t, modifiers: { mandatory: [ right_command,right_control,right_shift,right_option ] } }
+        to: [ { key_code: t , modifiers: [ left_command ] } ]
 
       #==========================================================#
       # ( a ) --> window management                              #
