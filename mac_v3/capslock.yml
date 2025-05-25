@@ -21,9 +21,9 @@ rules:
 
       - description: 'capslock = esc(click) | hyper(hold)'
         type: basic
-        from: { key_code: caps_lock ,modifiers: { optional: [ any ] } }
-        to: [ { key_code: right_shift,modifiers: [ right_command,right_control,right_option ] } ]
-        to_if_alone: [ { key_code: escape } ]
+        from: { key_code: caps_lock ,modifiers: { optional: [ any ] } } # capslock nothing
+        to: [ { key_code: right_shift,modifiers: [ right_command,right_control,right_option ] } ] # shift, cmd, ctrl, opt (right) 
+        to_if_alone: [ { key_code: escape } ] # 
 
       - description: 'escape = capslock switch'
         type: basic
