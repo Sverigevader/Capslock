@@ -1,5 +1,7 @@
-design/
+.*
+!.git*
 
+design/
 
 GALLERY.md
 
